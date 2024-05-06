@@ -8,19 +8,24 @@ import time
 
 class root(rootUI):
     global checkbox
+    global copy
     checkbox = 1
     def __init__(self, master=None):
         self.builder = pygubu.Builder()
         self.master = master
         super().__init__(master)
     
+    def copy(self):
+        self.progressbar.configure(value=100)
+        print("Done")
+        exit()
+
     def on_button1_click(self):
         # Other widget
         self.mainwindow.destroy()
         self.otherwindow: tk.Tk = self.builder.get_object("tk2", self.master)
         self.progressbar = self.builder.get_object("progressbar")
-        time.sleep(0.1)
-        self.progressbar.configure(value=100)
+        copy(self)
 
     def on_checkbox(self):
         global checkbox
