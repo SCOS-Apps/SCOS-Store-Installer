@@ -17,8 +17,6 @@ class root(rootUI):
     
     def copy(self):
         self.progressbar.configure(value=100)
-        print("Done")
-        exit()
 
     def on_button1_click(self):
         # Other widget
