@@ -108,9 +108,8 @@
       </object>
     </child>
   </object>
-  <object class="pygubu.builder.widgets.dialog" id="dialog" named="True">
-    <property name="height">100</property>
-    <property name="resizable">none</property>
+  <object class="tk.Tk" id="tk2">
+    <property name="height">200</property>
     <property name="width">200</property>
     <child>
       <object class="ttk.Frame" id="frame2">
