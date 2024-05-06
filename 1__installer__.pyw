@@ -17,7 +17,7 @@ class root(rootUI):
     def on_button1_click(self):
         # Other widget
         self.mainwindow.destroy()
-        self.otherwindow: tk.Tk = self.builder.get_object("dialog", self.master)
+        self.otherwindow: tk.Tk = self.builder.get_object("tk2", self.master)
         self.progressbar = self.builder.get_object("progressbar")
         time.sleep(0.1)
         self.progressbar.configure(value=100)
