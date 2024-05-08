@@ -2,9 +2,9 @@
 import pathlib
 import tkinter as tk
 import pygubu
+import requests
 from __installer__ui import rootUI
 import time
-
 
 class root(rootUI):
     global checkbox
@@ -16,7 +16,7 @@ class root(rootUI):
         super().__init__(master)
     
     def copy(self):
-        self.progressbar.configure(value=100)
+        pass
 
     def on_button1_click(self):
         # Other widget
