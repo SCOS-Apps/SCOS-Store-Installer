@@ -212,7 +212,7 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
         </child>
         <child>
           <object class="ttk.Button" id="button2">
-            <property name="command" type="command" cbtype="simple">on_button1_click</property>
+            <property name="command" type="command" cbtype="simple">on_button2_click</property>
             <property name="state">disabled</property>
             <property name="style">Toolbutton</property>
             <property name="text" translatable="yes">Next</property>
@@ -226,11 +226,10 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
         </child>
         <child>
           <object class="ttk.Radiobutton" id="radiobutton1">
-            <property name="command" type="command" cbtype="simple">defaultStore</property>
-            <property name="state">normal</property>
+            <property name="command" type="command" cbtype="simple">store1</property>
             <property name="takefocus">true</property>
             <property name="text" translatable="yes">SCOS App Store (Default)</property>
-            <property name="value">1</property>
+            <property name="value">0</property>
             <layout manager="pack">
               <property name="anchor">center</property>
               <property name="pady">30</property>
@@ -240,9 +239,9 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
         </child>
         <child>
           <object class="ttk.Radiobutton" id="radiobutton2">
-            <property name="command" type="command" cbtype="simple">otherStore</property>
+            <property name="command" type="command" cbtype="simple">store2</property>
             <property name="text" translatable="yes">Select custom store.</property>
-            <property name="value">2</property>
+            <property name="value">1</property>
             <layout manager="pack">
               <property name="anchor">center</property>
               <property name="pady">30</property>
@@ -256,6 +255,15 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
             <layout manager="pack">
               <property name="fill">x</property>
               <property name="padx">10</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label6">
+            <property name="font">{arial} 8 {bold italic}</property>
+            <property name="text" translatable="yes">Custom store link must be a valid GitHub store, or you'll have to reinstall the program</property>
+            <layout manager="pack">
               <property name="side">top</property>
             </layout>
           </object>
